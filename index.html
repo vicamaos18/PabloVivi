@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>P &amp; V — Nuestra historia</title>
+<meta name="description" content="Una historia de amor contada como debe ser: despacio, con calma y con todo el cariño del mundo.">
+
+<!-- ============================================================
+     FUENTES: Playfair Display (títulos elegantes) + Jost (cuerpo)
+     Puedes cambiarlas por otras de Google Fonts si lo prefieres.
+============================================================= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- AOS - Animate On Scroll -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- Estilos propios del proyecto -->
+<link rel="stylesheet" href="css/style.css">
+
+<!-- ============================================================
+     FAVICON: reemplaza este archivo por el que prefieras.
+     Ruta esperada: assets/images/favicon.png
+============================================================= -->
+<link rel="icon" type="image/jpeg" href="assets/images/portada.jpg">
+</head>
+<body>
+
+<!-- Corazones flotantes decorativos (generados por JS, ver script.js) -->
+<div id="floating-hearts" aria-hidden="true"></div>
+
+<!-- Barra de progreso de lectura -->
+<div id="scroll-progress" aria-hidden="true"></div>
+
+<!-- ============================================================
+     NAV flotante mínima (opcional) - puntos de sección
+============================================================= -->
+<nav id="dot-nav" aria-label="Navegación de secciones">
+  <a href="#seccion-1" class="dot-link active" data-label="Portada"></a>
+  <a href="#seccion-2" class="dot-link" data-label="Antes"></a>
+  <a href="#seccion-3" class="dot-link" data-label="Primer capítulo"></a>
+  <a href="#seccion-4" class="dot-link" data-label="La foto"></a>
+  <a href="#seccion-5" class="dot-link" data-label="La Guajira"></a>
+  <a href="#seccion-6" class="dot-link" data-label="Lo que amo"></a>
+  <a href="#seccion-7" class="dot-link" data-label="Familia"></a>
+  <a href="#seccion-8" class="dot-link" data-label="Sueños"></a>
+  <a href="#seccion-9" class="dot-link" data-label="Ruleta"></a>
+  <a href="#seccion-10" class="dot-link" data-label="Carta"></a>
+</nav>
+
+<!-- ============================================================
+     SECCIÓN 1 — PORTADA (HERO)
+     EDITAR: texto principal, foto de fondo
+     FOTO: assets/images/portada.jpg (reemplázala por una horizontal, 1920x1280 o similar)
+============================================================= -->
+<section id="seccion-1" class="hero-section" data-parallax-bg>
+  <div class="hero-bg" style="background-image:url('assets/images/portada.jpg');"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content container text-center" data-aos="fade-up" data-aos-duration="1200">
+    <!-- EDITAR TEXTO DE PORTADA AQUÍ -->
+    <p class="hero-eyebrow">Nuestra historia</p>
+    <p class="hero-line">Hay personas que llegan una vez.</p>
+    <p class="hero-line">Hay personas que se quedan para siempre.</p>
+    <p class="hero-line">Y hay personas que la vida te devuelve cuando llega el momento correcto.</p>
+    <p class="hero-line hero-line-emphasis">Quizás nosotros éramos de esos.</p>
+
+    <p class="hero-names">Pablo <span class="heart">❤</span> Viviana</p>
+
+    <a href="#seccion-2" class="btn btn-hero mt-4" id="btn-comenzar">
+      Comenzar nuestra historia
+    </a>
+  </div>
+
+  <div class="scroll-cue" aria-hidden="true">
+    <span></span>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 2 — TODO EMPEZÓ MUCHO ANTES
+     EDITAR: texto y foto
+     FOTO: assets/images/universidad.jpg
+============================================================= -->
+<section id="seccion-2" class="story-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
+        <div class="photo-frame">
+          <img src="assets/images/primer_capitulo.jpeg" alt="Universidad, donde todo empezó" class="img-fluid" loading="lazy">
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
+        <p class="section-kicker">Capítulo I</p>
+        <h2 class="section-title">Todo empezó mucho antes</h2>
+        <!-- EDITAR TEXTO AQUÍ -->
+        <p class="section-text">
+          Nos conocimos en la universidad.<br>
+          Dos estudiantes de ingeniería de sistemas compartiendo espacios, saludos y momentos cotidianos. Pero cada uno seguía su propio camino.
+        </p>
+        <p class="section-text section-text-emphasis">
+          Sin saberlo, la vida ya estaba escribiendo las primeras líneas de nuestra historia.
+        </p>
+        <!-- EDITAR TEXTO AQUÍ -->
+        <p class="section-text">
+          Años después volvimos a encontrarnos.
+        </p>
+        <p class="section-text">
+          Una conversación nos llevó a trotar.<br>
+          Y después de trotar, terminamos bailando.
+        </p>
+        <p class="section-text">
+          Durante algunos meses vivimos una historia bonita, intensa y llena de momentos especiales que se quedaron para siempre en mi mente y en mi corazon.
+        </p>
+        <p class="section-text">
+          La vida todavía tenía caminos distintos para cada uno.
+        </p>
+        <p class="section-text section-text-emphasis">
+          Pero algunas historias no terminan.<br>
+          Solo hacen una pausa.
+        </p>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 3 — NUESTRO PRIMER CAPÍTULO
+     EDITAR: texto y foto
+     FOTO: assets/images/primer_capitulo.jpg
+============================================================= -->
+<section id="seccion-3" class="story-section story-section-alt">
+  <div class="container">
+    <div class="row align-items-center g-5 flex-lg-row-reverse">
+      <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000">
+        <div class="photo-frame">
+          <img src="assets/images/primer_capitulo.jpeg" alt="Nuestro primer capítulo" class="img-fluid" loading="lazy">
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="150">
+        <p class="section-kicker">Capítulo II</p>
+        <h2 class="section-title">Nuestro primer capítulo</h2>
+        <!-- EDITAR TEXTO AQUÍ -->
+        <p class="section-text">
+          Años después volvimos a encontrarnos.
+        </p>
+        <p class="section-text">
+          Una conversación nos llevó a trotar.<br>
+          Y después de trotar, terminamos bailando.
+        </p>
+        <p class="section-text">
+          Durante algunos meses vivimos una historia bonita, intensa y llena de momentos especiales.
+        </p>
+        <p class="section-text">
+          La vida todavía tenía caminos distintos para cada uno.
+        </p>
+        <p class="section-text section-text-emphasis">
+          Pero algunas historias no terminan.<br>
+          Solo hacen una pausa.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 4 — LA FOTO QUE CAMBIÓ NUESTRA HISTORIA
+     INTERACCIÓN: la foto aparece borrosa; al hacer clic se revela
+     con una animación y aparece el mensaje "Todo comenzó aquí ❤️"
+     FOTO: assets/images/foto_mar.jpg
+============================================================= -->
+<section id="seccion-4" class="story-section reveal-section">
+  <div class="container text-center" data-aos="fade-up">
+    <p class="section-kicker">Capítulo III</p>
+    <h2 class="section-title">La foto que cambió nuestra historia</h2>
+    <!-- EDITAR TEXTO AQUÍ -->
+    <p class="section-text mx-auto" style="max-width:720px;">
+      Dicen que las grandes historias comienzan de maneras inesperadas.
+    </p>
+    <p class="section-text mx-auto" style="max-width:720px;">
+      La nuestra volvió a comenzar gracias a una fotografía, un comentario y a una prima insistente
+      que te convenció para que publicaras ese estado de WhatsApp.
+    </p>
+    <p class="section-text mx-auto" style="max-width:720px;">
+      Lo que parecía una decisión cualquiera terminó cambiando nuestra historia.
+    </p>
+    <p class="section-text section-text-emphasis mx-auto" style="max-width:720px;">
+      Una foto del mar.<br>
+      Un comentario.<br>
+      Una conversación.<br>
+      Y desde entonces no hemos dejado de hablar.
+    </p>
+    <p class="section-text mx-auto" style="max-width:720px;">
+      Cinco años después de nuestro primer capítulo, la vida volvió a cruzar nuestros caminos cuando menos lo esperábamos.
+    </p>
+
+    <!-- Imagen interactiva con blur -->
+    <div class="reveal-photo-wrapper mx-auto mt-5" data-aos="zoom-in">
+      <button type="button" class="reveal-photo-btn" id="reveal-photo-btn" aria-label="Haz clic para revelar la foto">
+        <img src="assets/images/foto_mar.jpg" alt="La foto del mar que cambió nuestra historia" class="reveal-photo" id="reveal-photo">
+        <span class="reveal-hint">Toca para revelar</span>
+      </button>
+      <p class="reveal-message" id="reveal-message">Todo comenzó aquí <span class="heart">❤</span></p>
+    </div>
+
+    <!-- Fecha destacada -->
+    <div class="date-highlight mt-5" data-aos="fade-up" data-aos-delay="100">
+      <span class="date-highlight-number">23</span>
+      <span class="date-highlight-text">de abril de 2026</span>
+    </div>
+    <p class="section-text mt-3">El día que volvimos a encontrarnos.</p>
+    <p class="section-text">O quizás...</p>
+    <p class="section-text section-text-emphasis">El día en que realmente comenzó nuestra historia.</p>
+  </div>
+
+  <!-- SUBSECCIÓN — LAS CONVERSACIONES -->
+  <div class="container mt-5 pt-5">
+    <p class="section-kicker text-center">Las conversaciones</p>
+    <h3 class="section-subtitle text-center">Poco a poco, todo se hizo más largo</h3>
+
+    <!-- Galería tipo chat -->
+    <div class="chat-gallery" data-aos="fade-up" data-aos-delay="100">
+      <!-- EDITAR/REEMPLAZAR CAPTURAS DE CHAT AQUÍ -->
+      <div class="chat-bubble-img"><img src="assets/images/chat_01.jpg" alt="Captura de conversación 1" loading="lazy"></div>
+      <div class="chat-bubble-img"><img src="assets/images/chat_02.jpg" alt="Captura de conversación 2" loading="lazy"></div>
+      <div class="chat-bubble-img"><img src="assets/images/chat_03.jpg" alt="Captura de conversación 3" loading="lazy"></div>
+      <div class="chat-bubble-img"><img src="assets/images/chat_04.jpg" alt="Captura de conversación 4" loading="lazy"></div>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up">
+        <!-- EDITAR TEXTO AQUÍ -->
+        <p class="section-text">
+          Hablábamos de tecnología, de trabajo, de fútbol, de carros, de nuestros sueños y de la vida.
+        </p>
+        <p class="section-text">
+          Lo que más me sorprendió no fue volver a hablar contigo.<br>
+          Fue descubrir lo fácil que era quedarme.
+        </p>
+        <p class="section-text">
+          Me encanta tu inteligencia, tu curiosidad y la forma en que puedes convertir cualquier tema
+          en una conversación interesante.
+        </p>
+        <p class="section-text section-text-emphasis">
+          Sin darme cuenta, te convertiste en mi mensaje favorito del día.<br>
+          Y también en una de mis personas favoritas.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 5 — LA GUAJIRA, DONDE NOS ELEGIMOS
+     Carrusel premium + video + subsección "El día que nos elegimos"
+     FOTOS: assets/images/guajira_01.jpg ... guajira_04.jpg
+     VIDEO: assets/videos/guajira_atardecer.mp4
+============================================================= -->
+<section id="seccion-5" class="story-section story-section-dark">
+  <div class="container text-center" data-aos="fade-up">
+    <p class="section-kicker">Capítulo IV</p>
+    <h2 class="section-title">La Guajira, donde nos elegimos</h2>
+    <!-- EDITAR TEXTO AQUÍ -->
+    <p class="section-text mx-auto" style="max-width:720px;">
+      Hay viajes que se hacen para conocer lugares.<br>
+      Y hay viajes que terminan ocupando un lugar especial en el corazón.
+    </p>
+    <p class="section-text section-text-emphasis mx-auto" style="max-width:720px;">
+      La Guajira fue uno de ellos.
+    </p>
+    <p class="section-text mx-auto" style="max-width:720px;">
+      Entre paisajes increíbles, atardeceres inolvidables y conversaciones infinitas, seguimos
+      descubriendo todo lo bonito que significa estar juntos.
+    </p>
+  </div>
+
+  <!-- Carrusel premium -->
+  <div class="container mt-5" data-aos="zoom-in">
+    <div id="guajiraCarousel" class="carousel slide premium-carousel" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#guajiraCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+        <button type="button" data-bs-target="#guajiraCarousel" data-bs-slide-to="1" aria-label="Foto 2"></button>
+        <button type="button" data-bs-target="#guajiraCarousel" data-bs-slide-to="2" aria-label="Foto 3"></button>
+        <button type="button" data-bs-target="#guajiraCarousel" data-bs-slide-to="3" aria-label="Foto 4"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- EDITAR/REEMPLAZAR FOTOS DE LA GUAJIRA AQUÍ -->
+        <div class="carousel-item active">
+          <img src="assets/images/guajira_01.jpg" class="d-block w-100" alt="La Guajira, foto 1" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/guajira_02.jpg" class="d-block w-100" alt="La Guajira, foto 2" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/guajira_03.jpg" class="d-block w-100" alt="La Guajira, foto 3" loading="lazy">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/images/guajira_04.jpg" class="d-block w-100" alt="La Guajira, foto 4" loading="lazy">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#guajiraCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#guajiraCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Video del atardecer -->
+  <div class="container mt-5" data-aos="fade-up">
+    <div class="video-frame mx-auto">
+      <!-- VIDEO: reemplaza assets/videos/guajira_atardecer.mp4 por el video real -->
+      <video
+        controls
+        playsinline
+        preload="metadata"
+        poster="assets/images/guajira_atardecer_poster.jpg"
+        class="w-100">
+        <source src="assets/videos/guajira_atardecer.mp4" type="video/mp4">
+        Tu navegador no soporta la reproducción de video.
+      </video>
+    </div>
+
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-8 text-center" data-aos="fade-up">
+        <!-- EDITAR TEXTO AQUÍ -->
+        <p class="section-text">Este es uno de mis recuerdos favoritos.</p>
+        <p class="section-text">
+          No solo por el paisaje.<br>
+          No solo por el atardecer.
+        </p>
+        <p class="section-text">Sino porque resume algo que amo profundamente de ti.</p>
+        <p class="section-text section-text-emphasis">Podría escucharte durante horas.</p>
+        <p class="section-text">
+          Me encanta tu forma de ver el mundo.<br>
+          Tu manera de explicar las cosas.<br>
+          Tu inteligencia.
+        </p>
+        <p class="section-text">Y la facilidad con la que conviertes cualquier conversación en algo fascinante.</p>
+        <p class="section-text section-text-emphasis">Hablar contigo siempre se siente como estar en casa.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUBSECCIÓN — EL DÍA QUE NOS ELEGIMOS -->
+  <div class="container mt-5 pt-5">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="photo-frame">
+          <!-- FOTO: assets/images/propuesta_noviazgo.jpg -->
+          <img src="assets/images/propuesta_noviazgo.jpg" alt="El día que nos elegimos, 8 de agosto de 2026" class="img-fluid" loading="lazy">
+        </div>
+      </div>
+      <div class="col-lg-6" data-aos="fade-left" data-aos-delay="150">
+        <p class="section-kicker">El día que nos elegimos</p>
+        <div class="date-highlight date-highlight-sm mb-4">
+          <span class="date-highlight-number">08</span>
+          <span class="date-highlight-text">de agosto de 2026</span>
+        </div>
+        <!-- EDITAR TEXTO AQUÍ -->
+        <p class="section-text">
+          Frente al mar.<br>
+          Bajo un atardecer perfecto.
+        </p>
+        <p class="section-text">Llegó uno de los momentos más especiales de nuestra historia.</p>
+        <p class="section-text">Ese día me preguntaste si quería ser tu novia.</p>
+        <p class="section-text">Y la verdad...</p>
+        <p class="section-text section-text-emphasis">Mi corazón ya te había elegido mucho antes.</p>
+        <p class="section-text section-text-emphasis">
+          Gracias por elegirme.<br>
+          Qué felicidad poder elegirte también.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 6 — LAS COSAS QUE AMO DE TI
+     Tarjetas con efecto flip
+     EDITAR: contenido de cada tarjeta abajo
+============================================================= -->
+<section id="seccion-6" class="story-section">
+  <div class="container text-center" data-aos="fade-up">
+    <p class="section-kicker">Capítulo V</p>
+    <h2 class="section-title">Las cosas que amo de ti</h2>
+    <p class="section-text mx-auto mb-5" style="max-width:640px;">Toca cada tarjeta para descubrir un poquito más.</p>
+  </div>
+
+  <div class="container">
+    <div class="row g-4 flip-card-grid">
+      <!-- EDITAR/AGREGAR TARJETAS AQUÍ: cada .flip-card es un elemento -->
+      <!-- Front = frase corta / Back = detalle (puedes dejarlo igual si prefieres una sola cara) -->
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Cómo me haces sentir</p></div>
+            <div class="flip-card-back"><p>Amada, tranquila y en casa, siempre.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Para ti siempre soy la mujer más hermosa del mundo</p></div>
+            <div class="flip-card-back"><p>Y me lo demuestras cada día.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Me haces sentir inteligente, interesante y especial</p></div>
+            <div class="flip-card-back"><p>Como si cada palabra mía importara.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Tu inteligencia</p></div>
+            <div class="flip-card-back"><p>Una de las primeras cosas que me enamoró.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Tu sentido del humor</p></div>
+            <div class="flip-card-back"><p>Nunca me falta una razón para reír contigo.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Cómo me haces reír</p></div>
+            <div class="flip-card-back"><p>Incluso en los días difíciles.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Nuestras conversaciones interminables</p></div>
+            <div class="flip-card-back"><p>Podría hablar contigo toda la noche.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Tu forma de enamorarme todos los días</p></div>
+            <div class="flip-card-back"><p>Nunca das nada por sentado.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Lo especial y detallista que eres</p></div>
+            <div class="flip-card-back"><p>Los pequeños gestos que dicen tanto.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Cómo me cuidas</p></div>
+            <div class="flip-card-back"><p>Siempre pendiente de mí.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Que no me dejas cargar nada pesado</p></div>
+            <div class="flip-card-back"><p>Ni lo intentas permitir.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Que siempre cargas mi maleta</p></div>
+            <div class="flip-card-back"><p>Sin que tenga que pedirlo.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Cómo me tratas como una princesa</p></div>
+            <div class="flip-card-back"><p>Todos los días, sin excepción.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Nunca te da pena demostrar lo que sientes por mí</p></div>
+            <div class="flip-card-back"><p>Frente a cualquiera, en cualquier lugar.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>La forma en que me haces sentir amada</p></div>
+            <div class="flip-card-back"><p>Sin dudarlo ni un segundo.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>La forma en que admiras a la mujer que soy</p></div>
+            <div class="flip-card-back"><p>Me haces sentir orgullosa de mí misma.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>La forma en que admiras a la mamá que soy</p></div>
+            <div class="flip-card-back"><p>Eso significa más de lo que imaginas.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="50">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Tu barba</p></div>
+            <div class="flip-card-back"><p>Un pequeño detalle que también amo.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Que apostaste por nosotros</p></div>
+            <div class="flip-card-back"><p>Cuando pudiste no hacerlo.</p></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-6 col-md-4 col-lg-3" data-aos="zoom-in" data-aos-delay="150">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><span class="flip-emoji">❤️</span><p>Que me eliges cada día</p></div>
+            <div class="flip-card-back"><p>Y yo vuelvo a elegirte a ti.</p></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 7 — LOS QUE TAMBIÉN HACEN PARTE DE ESTA HISTORIA
+     Collage: al pasar/tocar aparece un texto encima de la imagen
+     FOTOS: assets/images/samanta.jpg, iris.jpg, nala.jpg, orion.jpg, aros.jpg
+============================================================= -->
+<section id="seccion-7" class="story-section story-section-alt">
+  <div class="container text-center" data-aos="fade-up">
+    <p class="section-kicker">También en esta historia</p>
+    <h2 class="section-title">Los que también hacen parte de esta historia</h2>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row g-4">
+      <!-- Foto principal: Samanta -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="collage-item collage-item-lg">
+          <img src="assets/images/samanta.jpg" alt="Samanta" loading="lazy">
+          <div class="collage-overlay">
+            <h4>Samanta</h4>
+            <!-- EDITAR TEXTO AQUÍ -->
+            <p>
+              Una de las personas más importantes de mi vida. Me encanta ver cómo han construido una
+              relación basada en el respeto, la paciencia y la admiración. Poco a poco han encontrado
+              temas en común, conversaciones interesantes y una conexión muy bonita. Entre fútbol, carros
+              y muchas conversaciones han logrado construir una relación muy especial. Verte compartir
+              con ella y admirarla es algo que valoro profundamente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fotos pequeñas: mascotas -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="row g-4 h-100">
+          <div class="col-6">
+            <div class="collage-item">
+              <img src="assets/images/iris.jpg" alt="Iris" loading="lazy">
+              <div class="collage-overlay">
+                <h5>Iris</h5>
+                <p>La encargada oficial de las bienvenidas y de contagiar alegría.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="collage-item">
+              <img src="assets/images/nala.jpg" alt="Nala" loading="lazy">
+              <div class="collage-overlay">
+                <h5>Nala</h5>
+                <p>Compañera de aventuras y experta en repartir cariño.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="collage-item">
+              <img src="assets/images/orion.jpg" alt="Orión" loading="lazy">
+              <div class="collage-overlay">
+                <h5>Orión</h5>
+                <p>Un peluche disfrazado de gato y amante de toda la atención posible.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="collage-item">
+              <img src="assets/images/aros.jpg" alt="Aros" loading="lazy">
+              <div class="collage-overlay">
+                <h5>Aros</h5>
+                <p>El observador oficial de la casa, independiente y dueño de su propio mundo.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 8 — NUESTROS SUEÑOS
+     EDITAR: tarjetas de sueños
+============================================================= -->
+<section id="seccion-8" class="story-section">
+  <div class="container text-center" data-aos="fade-up">
+    <p class="section-kicker">Lo que viene</p>
+    <h2 class="section-title">Nuestros sueños</h2>
+    <!-- EDITAR TEXTO AQUÍ -->
+    <p class="section-text mx-auto mb-5" style="max-width:680px;">
+      Lo que más me emociona no son los meses que llevamos juntos.<br>
+      Es todo lo que todavía nos falta por vivir.
+    </p>
+  </div>
+
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <!-- EDITAR/AGREGAR TARJETAS DE SUEÑOS AQUÍ -->
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+        <div class="dream-card"><span>✈️</span><p>Viajes que soñamos hacer</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+        <div class="dream-card"><span>🌅</span><p>Más atardeceres juntos</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="dream-card"><span>📸</span><p>Recuerdos que aún no hemos creado</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="150">
+        <div class="dream-card"><span>💻</span><p>Seguir creciendo juntos</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
+        <div class="dream-card"><span>❤️</span><p>Más conversaciones</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="50">
+        <div class="dream-card"><span>❤️</span><p>Más aventuras</p></div>
+      </div>
+      <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+        <div class="dream-card"><span>❤️</span><p>Más tiempo para nosotros</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 9 — RULETA DEL AMOR
+     Ruleta real que gira (canvas), con confeti al finalizar.
+     EDITAR: opciones en el array WHEEL_OPTIONS en js/script.js
+============================================================= -->
+<section id="seccion-9" class="story-section story-section-dark text-center">
+  <div class="container" data-aos="fade-up">
+    <p class="section-kicker">Un momento para jugar</p>
+    <h2 class="section-title">Ruleta del amor</h2>
+    <p class="section-text mx-auto mb-5" style="max-width:640px;">
+      Gira la ruleta y deja que ella decida nuestro próximo plan.
+    </p>
+
+    <div class="wheel-wrapper mx-auto">
+      <div class="wheel-pointer" aria-hidden="true"></div>
+      <canvas id="wheelCanvas" width="500" height="500" aria-label="Ruleta del amor"></canvas>
+    </div>
+
+    <button type="button" id="spinBtn" class="btn btn-hero mt-4">Girar la ruleta</button>
+
+    <div id="wheelResult" class="wheel-result mt-4" role="status" aria-live="polite"></div>
+  </div>
+  <!-- Canvas de confeti, ocupa toda la pantalla -->
+  <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+</section>
+
+<!-- ============================================================
+     SECCIÓN 10 — CARTA FINAL
+     Estructura visual lista para editar. NO se incluye texto
+     definitivo: reemplaza el contenido dentro de #carta-final-texto.
+     FOTO: assets/images/foto_final.jpg
+============================================================= -->
+<section id="seccion-10" class="story-section letter-section">
+  <div class="letter-bg" style="background-image:url('assets/images/foto_final.jpg');"></div>
+  <div class="letter-overlay"></div>
+
+  <div class="container position-relative">
+    <div class="letter-card mx-auto" data-aos="fade-up" data-aos-duration="1000">
+      <p class="letter-kicker">Para ti</p>
+      <h2 class="letter-title">Una carta, escrita con calma</h2>
+
+      <!-- ============================================================
+           EDITAR AQUÍ: escribe la carta final definitiva.
+           Puedes usar tantos <p> como necesites.
+      ============================================================= -->
+      <div id="carta-final-texto" class="letter-text" contenteditable="false">
+        <p>[ Escribe aquí el inicio de tu carta... ]</p>
+        <p>[ Continúa con lo que quieras decirle... ]</p>
+        <p>[ Cierra con la firma que prefieras. ]</p>
+      </div>
+
+      <p class="letter-signature">Con todo mi corazón,<br>Pablo <span class="heart">❤</span> Viviana</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================= -->
+<footer class="site-footer text-center">
+  <p class="mb-0">Hecho con <span class="heart">❤</span> — Pablo &amp; Viviana</p>
+</footer>
+
+<!-- ============================================================
+     LIBRERÍAS JS (CDN)
+============================================================= -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+
+<!-- Script propio del proyecto -->
+<script src="js/script.js"></script>
+</body>
+</html>
