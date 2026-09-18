@@ -142,15 +142,15 @@ document.addEventListener('DOMContentLoaded', function () {
 
   // EDITAR AQUÍ: opciones de la ruleta (texto que se muestra en cada gajo)
   const WHEEL_OPTIONS = [
-    '🍦 Salida por helado',
-    '🌅 Ver un atardecer juntos',
-    '🎬 Noche de películas',
-    '🚗 Roadtrip improvisado',
-    '📸 Nueva sesión de fotos',
-    '🍔 Cena especial',
-    '🌙 Noche bajo las estrellas',
-    '❤️ Una cita organizada por Vivi',
-    '🎁 Sorpresa secreta',
+    ' Salida por helado',
+    ' Ver un atardecer juntos',
+    ' Noche de películas',
+    ' Tarde de picnic',
+    ' Juan valdez y charla larga',
+    ' Cena especial',
+    ' Domingo de spa en casa',
+    ' Tarde de juegos de mesa',
+    ' Sorpresa secreta',
   ];
 
   const WHEEL_COLORS = [
