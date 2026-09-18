@@ -6,10 +6,7 @@
 <title>P &amp; V — Nuestra historia</title>
 <meta name="description" content="Una historia de amor contada como debe ser: despacio, con calma y con todo el cariño del mundo.">
 
-<!-- ============================================================
-     FUENTES: Playfair Display (títulos elegantes) + Jost (cuerpo)
-     Puedes cambiarlas por otras de Google Fonts si lo prefieres.
-============================================================= -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -23,13 +20,23 @@
 <!-- Estilos propios del proyecto -->
 <link rel="stylesheet" href="css/style.css">
 
-<!-- ============================================================
-     FAVICON: reemplaza este archivo por el que prefieras.
-     Ruta esperada: assets/images/favicon.png
-============================================================= -->
+
 <link rel="icon" type="image/jpeg" href="assets/images/portada.jpg">
 </head>
 <body>
+
+  <div id="password-gate">
+  <div class="password-card">
+    <p class="password-heart">❤</p>
+    <h2>Esto es solo para ti</h2>
+    <p>Ingresa la contraseña para continuar</p>
+    <form id="password-form" autocomplete="off">
+      <input type="password" id="password-input" placeholder="Contraseña" required>
+      <button type="submit">Entrar</button>
+      <p id="password-error" hidden>Contraseña incorrecta, inténtalo de nuevo.</p>
+    </form>
+  </div>
+</div>
 
 <!-- Corazones flotantes decorativos (generados por JS, ver script.js) -->
 <div id="floating-hearts" aria-hidden="true"></div>
@@ -54,16 +61,13 @@
 </nav>
 
 <!-- ============================================================
-     SECCIÓN 1 — PORTADA (HERO)
-     EDITAR: texto principal, foto de fondo
-     FOTO: assets/images/portada.jpg (reemplázala por una horizontal, 1920x1280 o similar)
+     SECCIÓN 1 — PORTADA 
 ============================================================= -->
 <section id="seccion-1" class="hero-section" data-parallax-bg>
   <div class="hero-bg" style="background-image:url('assets/images/portada.jpg');"></div>
   <div class="hero-overlay"></div>
 
   <div class="hero-content container text-center" data-aos="fade-up" data-aos-duration="1200">
-    <!-- EDITAR TEXTO DE PORTADA AQUÍ -->
     <p class="hero-eyebrow">Nuestra historia</p>
     <p class="hero-line">La vida nos volvió a encontrar...</p>
     <p class="hero-line">Y qué bonito ha sido desde entonces.</p>
@@ -81,21 +85,19 @@
 </section>
 
 <!-- ============================================================
-     SECCIÓN 2 — TODO EMPEZÓ MUCHO ANTES
-     EDITAR: texto y foto
-     FOTO: assets/images/universidad.jpg
+     SECCIÓN 2 
 ============================================================= -->
 <section id="seccion-2" class="story-section story-section-alt">
   <div class="container">
     <div class="row align-items-center g-5">
       <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1000">
         <div class="photo-frame">
-          <img src="assets/images/primer_capitulo.jpeg" alt="Universidad, donde todo empezó" class="img-fluid" loading="lazy">
+          <img src="assets/images/primer_capitulo.jpeg" alt="" class="img-fluid" loading="lazy">
         </div>
       </div>
       <div class="col-lg-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="150">
         <h2 class="section-title">Al principio...</h2>
-        <!-- EDITAR TEXTO AQUÍ -->
+
         <p class="section-text">
          Solo compartíamos algunos saludos y momentos de la vida universitaria, sin imaginar lo que el futuro tenía preparado para nosotros.
         </p>
@@ -105,7 +107,7 @@
         <p class="section-text section-text-emphasis">
           Sin saberlo, la vida ya estaba escribiendo las primeras líneas de nuestra historia.
         </p>
-        <!-- EDITAR TEXTO AQUÍ -->
+
         <p class="section-text">
           Son recuerdos hermosos que nunca olvidé y que siempre han ocupado un lugar especial en mi corazón.
          Aunque nuestras vidas siguieron por caminos distintos,  aquellos momentos nunca dejaron de acompañarme, como una llama encendida, esperando el momento de volver a encontrarnos.
@@ -123,31 +125,26 @@
 
 
 <!-- ============================================================
-     SECCIÓN 4 — LA FOTO QUE CAMBIÓ NUESTRA HISTORIA
-     INTERACCIÓN: la foto aparece borrosa; al hacer clic se revela
-     con una animación y aparece el mensaje "Todo comenzó aquí ❤️"
-     FOTO: assets/images/foto_mar.jpg
+     SECCIÓN 4 
 ============================================================= -->
 <section id="seccion-4" class="story-section reveal-section">
   <div class="container text-center" data-aos="fade-up">
     <h2 class="section-title">Dos decisiones, una oportunidad...</h2>
 
-    <!-- Fecha destacada -->
     <div class="date-highlight mt-5" data-aos="fade-up" data-aos-delay="100">
       <span class="date-highlight-number">23</span>
       <span class="date-highlight-text">de abril de 2026</span>
     </div>
 
-    <!-- Imagen interactiva con blur -->
     <div class="reveal-photo-wrapper mx-auto mt-5" data-aos="zoom-in">
       <button type="button" class="reveal-photo-btn" id="reveal-photo-btn" aria-label="Haz clic para revelar la foto">
         <img src="assets/images/foto_mar.jpeg" alt="La foto del mar que cambió nuestra historia" class="reveal-photo" id="reveal-photo">
         <span class="reveal-hint">Todo comenzó aquí ❤️</span>
       </button>
       <br>
-      <!--<p class="reveal-message" id="reveal-message">Todo comenzó aquí <span class="heart">❤</span></p>-->
+
     </div>
-    <!-- EDITAR TEXTO AQUÍ -->
+
     <p class="section-text mx-auto" style="max-width:720px;">
       Después de cinco años apareció una oportunidad que no quería dejar pasar. Vi tu foto en el mar y decidí comentarla, con la esperanza de que pudiera convertirse en el inicio de una conversación. No sabía si responderías, si esto llegaría más lejos, pero quise arriesgarme.
     </p>
@@ -156,16 +153,16 @@
     </p>
   </div>
    <!--  ============================================================
-      SECCIÓN 5 — LA GUAJIRA, DONDE NOS ELEGIMOS
+      SECCIÓN 5 
   ============================================================= -->
   <section id="seccion-5" class="story-section story-section-dark">
   <div class="container text-center" data-aos="fade-up">
-    <h2 class="section-title">Nuestras citas</h2>
-    <!-- EDITAR TEXTO AQUÍ -->
+    <h2 class="section-title">Algunas foticos</h2>
+
     
   </div>
 
-  <!-- Carrusel premium -->
+  <!-- Carrusel -->
   <div class="container mt-5" data-aos="zoom-in">
   <div id="guajiraCarouselVertical" class="carousel slide premium-carousel premium-carousel-vertical" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -219,13 +216,11 @@
     </button>
   </div>
 </div>
-  <!-- SUBSECCIÓN — LAS CONVERSACIONES -->
+  <!-- SUBSECCIÓN -->
   <div class="container mt-5 pt-5">
     <p class="section-kicker text-center">Mensajitos lindos</p>
 
-    <!-- Galería tipo chat -->
     <div class="chat-gallery" data-aos="fade-up" data-aos-delay="100">
-      <!-- EDITAR/REEMPLAZAR CAPTURAS DE CHAT AQUÍ -->
       <div class="chat-bubble-img"><img src="assets/images/chat_01.jpeg" alt="Captura de conversación 1" loading="lazy"></div>
       <div class="chat-bubble-img"><img src="assets/images/chat_02.jpeg" alt="Captura de conversación 2" loading="lazy"></div>
       <div class="chat-bubble-img"><img src="assets/images/chat_03.jpeg" alt="Captura de conversación 3" loading="lazy"></div>
@@ -234,11 +229,6 @@
 
     <div class="row justify-content-center mt-5">
       <div class="col-lg-8 text-center" data-aos="fade-up">
-        <!-- EDITAR TEXTO AQUÍ -->
-        <p class="section-text">
-          Me encanta hablar contigo, cuando me cuentas tus experiencias y cuando hablas de lo que te apasiona. Me gusta cuando confías en mí, abres tu corazón y expresas tus sentimientos y emociones.
-           Tus mensajes me alegran la vida.🥰
-        </p>
         <p class="section-text section-text-emphasis">
            Te convertiste en mi mensaje favorito del día.
         </p>
@@ -248,12 +238,11 @@
 </section>
 
 <!-- ============================================================
-     SECCIÓN 5 — LA GUAJIRA, DONDE NOS ELEGIMOS
+     SECCIÓN 5
 ============================================================= -->
 <section id="seccion-5" class="story-section story-section-dark">
   <div class="container text-center" data-aos="fade-up">
     <h2 class="section-title">La Guajira</h2>
-    <!-- EDITAR TEXTO AQUÍ -->
     <p class="section-text mx-auto" style="max-width:720px;">
       Fue una experiencia que llegó de una manera inesperada y terminó convirtiéndose en un viaje muy especial para nosotros. Fueron días de disfrutar, conocer, conversar y dejarnos llevar por cada momento.
     </p>
@@ -265,7 +254,7 @@
     </p>
   </div>
 
-  <!-- Carrusel premium -->
+  <!-- Carrusel -->
   <div class="container mt-5" data-aos="zoom-in">
     <div id="guajiraCarousel" class="carousel slide premium-carousel" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -277,7 +266,6 @@
 
       </div>
       <div class="carousel-inner">
-        <!-- EDITAR/REEMPLAZAR FOTOS DE LA GUAJIRA AQUÍ -->
         <div class="carousel-item active">
           <img src="assets/images/guajira_01.jpg" class="d-block w-100" alt="La Guajira, foto 1" loading="lazy">
         </div>
@@ -321,14 +309,14 @@
 
     <div class="row justify-content-center mt-5">
       <div class="col-lg-8 text-center" data-aos="fade-up">
-        <!-- EDITAR TEXTO AQUÍ -->
+
         <p class="section-text">Me encanta este video porque guarda un momento muy sencillo, pero muy especial para mí. Los dos contemplando un ese atardecer tan hermoso, hablando y disfrutando de ese momento sin pensar en nada más.</p>
         <p class="section-text section-text-emphasis">Hablar contigo es mi pasatiempo favorito.</p>
       </div>
     </div>
   </div>
 
-  <!-- SUBSECCIÓN — EL DÍA QUE NOS ELEGIMOS -->
+  <!-- SUBSECCIÓN  -->
   <div class="container mt-5 pt-5">
     <div class="row align-items-center g-5">
       <div class="col-lg-6" data-aos="fade-right">
@@ -354,7 +342,7 @@
 </section>
 
 <!-- ============================================================
-     SECCIÓN 6 — LAS COSAS QUE AMO DE TI
+     SECCIÓN 6 
 ============================================================= -->
 <section id="seccion-6" class="story-section">
   <div class="container text-center" data-aos="fade-up">
@@ -550,7 +538,7 @@
 </section>
 
 <!-- ============================================================
-     SECCIÓN 7 — LOS QUE TAMBIÉN HACEN PARTE DE ESTA HISTORIA
+     SECCIÓN 7 
 ============================================================= -->
 <section id="seccion-7" class="story-section story-section-alt">
   <div class="container text-center" data-aos="fade-up">
@@ -573,7 +561,6 @@
         </div>
       </div>
 
-      <!-- Fotos pequeñas: mascotas -->
       <div class="col-md-6" data-aos="fade-left">
         <div class="row g-4 h-100">
           <div class="col-6">
@@ -619,14 +606,13 @@
 </section>
 
 <!-- ============================================================
-     SECCIÓN 8 — NUESTROS SUEÑOS
-     EDITAR: tarjetas de sueños
+     SECCIÓN 8 
 ============================================================= -->
 <section id="seccion-8" class="story-section">
   <div class="container text-center" data-aos="fade-up">
     <p class="section-kicker">Lo que viene</p>
     <h2 class="section-title">Algunos sueños</h2>
-    <!-- EDITAR TEXTO AQUÍ -->
+
     <p class="section-text mx-auto mb-5" style="max-width:680px;">
      Amo lo que hemos vivido hasta ahora,<br>
      pero me emociona más pensar en todo lo lindo que nos falta por vivir.
@@ -635,7 +621,6 @@
 
   <div class="container">
     <div class="row g-4 justify-content-center">
-      <!-- EDITAR/AGREGAR TARJETAS DE SUEÑOS AQUÍ -->
       <div class="col-6 col-md-4 col-lg-3" data-aos="fade-up">
         <div class="dream-card"><span>✈️</span><p>Viajar y descubrir el mundo juntos</p></div>
       </div>
@@ -659,9 +644,7 @@
 </section>
 
 <!-- ============================================================
-     SECCIÓN 9 — RULETA DEL AMOR
-     Ruleta real que gira (canvas), con confeti al finalizar.
-     EDITAR: opciones en el array WHEEL_OPTIONS en js/script.js
+     SECCIÓN 9 
 ============================================================= -->
 <section id="seccion-9" class="story-section story-section-dark text-center">
   <div class="container" data-aos="fade-up">
@@ -680,15 +663,12 @@
 
     <div id="wheelResult" class="wheel-result mt-4" role="status" aria-live="polite"></div>
   </div>
-  <!-- Canvas de confeti, ocupa toda la pantalla -->
+
   <canvas id="confettiCanvas" aria-hidden="true"></canvas>
 </section>
 
 <!-- ============================================================
-     SECCIÓN 10 — CARTA FINAL
-     Estructura visual lista para editar. NO se incluye texto
-     definitivo: reemplaza el contenido dentro de #carta-final-texto.
-     FOTO: assets/images/foto_final.jpg
+     SECCIÓN 10
 ============================================================= -->
 <section id="seccion-10" class="story-section letter-section">
   <div class="letter-bg" style="background-image:url('assets/images/foto_final.jpg');"></div>
@@ -697,11 +677,6 @@
   <div class="container position-relative">
     <div class="letter-card mx-auto" data-aos="fade-up" data-aos-duration="1000">
       <h2 class="letter-title">Amor...</h2>
-
-      <!-- ============================================================
-           EDITAR AQUÍ: escribe la carta final definitiva.
-           Puedes usar tantos <p> como necesites.
-      ============================================================= -->
       <div id="carta-final-texto" class="letter-text" contenteditable="false">
         <p>Quiero empezar dándote las gracias por ser como eres conmigo. 
           Gracias por quererme de la forma en que lo haces, por demostrarme lo que sientes, por escucharme, entenderme y hacerme sentir tan especial. 
@@ -736,4 +711,7 @@
 <!-- Script propio del proyecto -->
 <script src="js/script.js"></script>
 </body>
+
+
+
 </html>

@@ -1,7 +1,42 @@
+
 /* ==========================================================================
-   VIVIANA & [NOMBRE] — NUESTRA HISTORIA
-   Script principal del sitio.
+   Pantalla de contraseña
    ========================================================================== */
+(function () {
+  const SITE_PASSWORD = '08082026'; // <-- cambia esta contraseña
+
+  const gate = document.getElementById('password-gate');
+  if (!gate) return;
+
+  if (sessionStorage.getItem('site_unlocked') === 'true') {
+    gate.classList.add('hidden');
+    return;
+  }
+
+  document.body.classList.add('gate-locked');
+
+  const form = document.getElementById('password-form');
+  const input = document.getElementById('password-input');
+  const error = document.getElementById('password-error');
+  const card = document.querySelector('.password-card');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (input.value === SITE_PASSWORD) {
+      sessionStorage.setItem('site_unlocked', 'true');
+      document.body.classList.remove('gate-locked');
+      gate.classList.add('hidden');
+    } else {
+      error.hidden = false;
+      card.classList.add('shake');
+      input.value = '';
+      setTimeout(function () {
+        card.classList.remove('shake');
+      }, 400);
+    }
+  });
+})();
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -18,8 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* ------------------------------------------------------------------
-     2) Scroll suave para el botón "Comenzar nuestra historia"
-        (y cualquier ancla interna)
+     2) Scroll suave para el botón 
   ------------------------------------------------------------------ */
   document.querySelectorAll('a[href^="#"]').forEach(function (link) {
     link.addEventListener('click', function (e) {
@@ -87,7 +121,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   /* ------------------------------------------------------------------
-     5) SECCIÓN 4 — Blur reveal de la foto del mar
+     5) SECCIÓN 4 — 
   ------------------------------------------------------------------ */
   const revealBtn = document.getElementById('reveal-photo-btn');
   const revealMessage = document.getElementById('reveal-message');
