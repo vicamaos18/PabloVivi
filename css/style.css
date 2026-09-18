@@ -522,6 +522,18 @@ img {
   object-fit: cover;
 }
 
+.premium-carousel-vertical {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.premium-carousel-vertical .carousel-item img {
+  height: clamp(420px, 90vw, 680px);
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+}
+
 .premium-carousel .carousel-indicators [data-bs-target] {
   background-color: var(--color-gold);
   width: 10px;
